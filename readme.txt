@@ -1,4 +1,4 @@
-=== Watchman [![Build Status](https://travis-ci.org/rtCamp/rt-lib.svg?branch=master)](https://travis-ci.org/rtCamp/rt-lib) ===
+=== Watchman [![Build Status](https://travis-ci.org/desaiuditd/watchman.svg?branch=master)](https://travis-ci.org/desaiuditd/watchman) ===
 Contributors:      desaiuditd
 Tags:              revisions, post, page, custom post types, WordPress, history
 Requires at least: 3.6
