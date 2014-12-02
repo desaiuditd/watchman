@@ -25,7 +25,7 @@ Following are some of the trivial features:
 
 **NOTE**: Development in progress
 
-** Important Links ( Future Links - doesn't exist right now ) **
+**Important Links ( Future Links - doesn't exist right now )**
 
 * [Project Homepage](http://blog.incognitech.in/watchman/ "Visit Watchman's Homepage")
 * [Roadmap](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Roadmap page")
