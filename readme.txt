@@ -46,7 +46,7 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 == Screenshots ==
 
-> Soon to be come.
+    > Soon to be come.
 
 ** License **
 
