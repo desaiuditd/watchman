@@ -12,14 +12,28 @@ Watchman is a WordPress plugin which keeps track of revisions for your posts, pa
 
 ## Description ##
 
-[![Build Status](https://travis-ci.org/desaiuditd/watchman.png?branch=master)](https://travis-ci.org/desaiuditd/watchman)
-### Important Links ( Future Links - doesn't exist right now ) ###
+Following are some of the trivial features:
+
+ * Tracks Post Title & Post Content - inherits from WordPress Core
+ * Tracks Post Author
+ * Tracks Post Date
+ * Tracks Featured Image
+ * Tracks Comments for a Post
+ * Tracks Metadata
+ * Tracks Terms from Taxonomy
+ * Controls number of revisions for all post types
+
+**NOTE**: Development in progress
+
+** Important Links ( Future Links - doesn't exist right now ) **
+
 * [Project Homepage](http://blog.incognitech.in/watchman/ "Visit Watchman's Homepage")
 * [Roadmap](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Roadmap page")
 * [Documentation](http://blog.incognitech.in/watchman/docs/ "Visit Watchman's Documentation page")
 * [FAQ](http://blog.incognitech.in/watchman/faq/ "Visit Watchman's FAQ page")
 * [GitHub](http://github.com/desaiuditd/watchman/) - Please mention your wordpress.org username when sending pull requests.
 
+[![Build Status](https://travis-ci.org/desaiuditd/watchman.png?branch=master)](https://travis-ci.org/desaiuditd/watchman)
 
 ## Installation ##
 
