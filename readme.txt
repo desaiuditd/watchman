@@ -7,11 +7,9 @@ Stable tag:        master
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
-
+Watchman is a WordPress plugin which keeps track of revisions for your posts, pages and custom post types as well.
 
 == Description ==
-
-Watchman is a WordPress plugin which keeps track of revisions for your posts, pages and custom post types as well.
 
 Following are some of the trivial features:
 
@@ -73,6 +71,3 @@ Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadm
 * Plugin Scaffolding
 * Basic Functionality
 * Travis Setup
-
-= 0.1 =
-Plugin Scaffolding, Basic Functionality, Travis Setup
