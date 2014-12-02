@@ -71,3 +71,7 @@ Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadm
 * Plugin Scaffolding
 * Basic Functionality
 * Travis Setup
+
+== Upgrade Notice ==
+
+None.
