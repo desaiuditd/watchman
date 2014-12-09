@@ -18,13 +18,6 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		function __construct() {
 
 			/**
-			 * Filter to pass on additional revision fields to check. Not really use though. Let's see.
-			 *
-			 * Might be removed later on.
-			 */
-			add_filter( '_wp_post_revision_fields', array( $this, 'revision_fields' ) );
-
-			/**
 			 * This hooks gets fired once a revision is stored in WP_Post table in DB.
 			 *
 			 * This gives us $revision_id. So we can make use of that and store our stuff into post meta for that particular revision.
@@ -41,7 +34,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 			 *
 			 * We will take care of our own fields and pass on the flag.
 			 */
-			add_filter( 'wp_save_post_revision_check_for_changes', array( $this, 'check_for_changes' ) );
+			add_filter( 'wp_save_post_revision_check_for_changes', array( $this, 'check_for_changes' ), 10, 3 );
 
 			/**
 			 * We may have to call this dynamically within a for loop. depending upon how many custom fields that we are supporting.
@@ -50,17 +43,6 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 			 */
 			$field = '';
 			add_filter( '_wp_post_revision_field_'.$field, array( $this, 'revision_field_content' ) );
-		}
-
-		/**
-		 * @param $fields
-		 *
-		 * @return mixed
-		 */
-		function revision_fields( $fields ) {
-			$fields['post_format']   = __( 'Post Format', WM_TEXT_DOMAIN );
-			$fields['post_category'] = __( 'Post Category', WM_TEXT_DOMAIN );
-			return $fields;
 		}
 
 		/**
