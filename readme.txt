@@ -1,12 +1,12 @@
 === Watchman [![Build Status](https://travis-ci.org/desaiuditd/watchman.svg?branch=master)](https://travis-ci.org/desaiuditd/watchman) ===
 Contributors:      desaiuditd
+Donate Link:       Paypal ID : desaiuditd@gmail.com
 Tags:              revisions, post, page, custom post types, WordPress, history
 Requires at least: 3.6
 Tested up to:      4.0
 Stable tag:        master
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
-Donate Link:       Paypal ID : desaiuditd@gmail.com
 
 Watchman is a WordPress plugin which keeps track of revisions for your posts, pages and custom post types as well.
 
