@@ -112,7 +112,10 @@ if ( ! class_exists( 'Watchman' ) ) {
 		 * @return void
 		 */
 		private function includes() {
+			include_once trailingslashit( WM_PATH ) . 'lib/class-wm-autoload.php';
+			new WM_Autoload( trailingslashit( WM_PATH ) . 'revision/' );
 
+			new WM_Revision();
 		}
 
 		/**
