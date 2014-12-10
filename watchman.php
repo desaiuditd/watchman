@@ -90,7 +90,7 @@ if ( ! class_exists( 'Watchman' ) ) {
 
 			// Defines WM_TEXT_DOMAIN if it does not exits.
 			if ( ! defined( 'WM_TEXT_DOMAIN' ) ) {
-				define( 'WM_TEXT_DOMAIN', 'ttpw' );
+				define( 'WM_TEXT_DOMAIN', 'watchman' );
 			}
 
 			// Defines WM_PATH if it does not exits.
