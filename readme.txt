@@ -1,4 +1,4 @@
-=== Watchman [![Build Status](https://travis-ci.org/desaiuditd/watchman.svg?branch=master)](https://travis-ci.org/desaiuditd/watchman) ===
+=== Watchman ===
 Contributors:      desaiuditd
 Donate Link:       Paypal ID : desaiuditd@gmail.com
 Tags:              revisions, post, page, custom post types, WordPress, history
