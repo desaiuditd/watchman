@@ -53,12 +53,12 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 ## Changelog ##
 
-### 0.2 ###
+### 0.2 Decempber 11, 2014 ###
 * Watchman Settings introduced
 * Revision Limit by Post Type
 * Watchman Icon added
 
-### 0.1 ###
+### 0.1 Decempber 03, 2014 ###
 * Plugin Scaffolding
 * Basic Functionality
 * Travis Setup
