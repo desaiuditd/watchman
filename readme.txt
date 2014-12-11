@@ -69,6 +69,9 @@ Great! There are several ways you can get involved to help make Watman better:
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
 
+= 0.3 December 12, 2014 =
+* Plugin title changed
+
 = 0.2 Decempber 11, 2014 =
 * Watchman Settings introduced
 * Revision Limit by Post Type

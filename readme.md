@@ -55,6 +55,9 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 ## Changelog ##
 
+### 0.3 December 12, 2014 ###
+* Plugin title changed
+
 ### 0.2 Decempber 11, 2014 ###
 * Watchman Settings introduced
 * Revision Limit by Post Type
