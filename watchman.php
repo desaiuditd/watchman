@@ -3,7 +3,7 @@
  * Plugin Name: Watchman
  * Plugin URI: http://blog.incognitech.in/watchman
  * Description: A WordPress plugin to track revisions of your posts, pages and custom posts
- * Version: 0.1
+ * Version: 0.2
  * Author: desaiuditd
  * Author URI: http://blog.incognitech.in
  */
