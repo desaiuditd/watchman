@@ -48,10 +48,11 @@ Please visit [Watchamn's FAQ page](http://blog.incognitech.in/watchman/faq/ "Vis
 
 Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
-> Screenshots are soon to come.
-
 ## Screenshots ##
 
+### Watchman Settings Page
+
+![Watchman Settings Page](assets/screenshot-1.png)
 
 ## Changelog ##
 
