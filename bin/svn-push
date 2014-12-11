@@ -118,7 +118,7 @@ cd $svn_repo_dir
 
 # Delete any files from SVN that are no longer there
 FILES_TO_DELETE=$(svn status . | grep "^\!" | sed 's/^\! *//g')
-if [ -n FILES_TO_DELETE ]; then
+if [ -n "$FILES_TO_DELETE" ]; then
     xargs svn rm
 fi
 
