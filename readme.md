@@ -56,6 +56,9 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 ## Changelog ##
 
+### 0.4 December 12, 2014 ###
+* Screenshot added
+
 ### 0.3 December 12, 2014 ###
 * Plugin title changed
 
