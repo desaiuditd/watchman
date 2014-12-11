@@ -36,7 +36,7 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			$revision = get_option( self::$revision_limit_key . $post_type, false );
 
 			if ( empty( $revision ) || ! is_numeric( $revision ) ) {
-				$num = true;
+				$num = -1;
 			} else {
 				$num = intval( $revision );
 			}
@@ -79,7 +79,7 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 		}
 
 		function enqueue_scripts_styles() {
-			wp_enqueue_style( 'watchman-icons', trailingslashit( WM_URL ) . 'assets/css/watchman-icons.css', array(), WM_VERSION, 'all' );
+			wp_enqueue_style( 'watchman-icons', trailingslashit( WM_URL ) . 'ui/css/watchman-icons.css', array(), WM_VERSION, 'all' );
 		}
 
 		function admin_menu_css() {
@@ -138,7 +138,7 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			$post_type_obj = get_post_type_object( $post_type );
 			$labels = get_post_type_labels( $post_type_obj );
 
-			if ( ! is_numeric( $value ) ) {
+			if ( ! empty( $value ) && ! is_numeric( $value ) ) {
 				add_settings_error( $option, 'watchman_errors', sprintf( __( 'You need to fill numeric value for %s revision limit.', WM_TEXT_DOMAIN ), '<strong>' . $labels->name . '</strong>' ) );
 			} else {
 				$value = absint( $value );
@@ -149,7 +149,9 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 
 		function revision_limit_section_callback() { ?>
 			<p class="description">
-				<?php _e( 'This section lets you control revision limits on your post types. Leave blank in case of unlimited revisions.', WM_TEXT_DOMAIN ); ?>
+				<?php _e( 'This section lets you control revision limits on your post types. Leave blank in case of unlimited revisions.', WM_TEXT_DOMAIN ); ?><br />
+				<?php _e( 'If any post type is registered but missing from the following list, then it means that it does not support revisions.', WM_TEXT_DOMAIN ); ?><br />
+				<?php _e( 'Please make sure the post type you want to monitor declares revision support in registration.', WM_TEXT_DOMAIN ); ?>
 			</p>
 		<?php }
 

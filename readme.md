@@ -16,13 +16,13 @@ Watchman is a WordPress plugin which keeps track of revisions for your posts, pa
 Following are some of the trivial features:
 
  * Tracks Post Title & Post Content - inherits from WordPress Core
+ * Controls number of revisions for all post types
  * Tracks Post Author
  * Tracks Post Date
  * Tracks Featured Image
  * Tracks Comments for a Post
  * Tracks Metadata
  * Tracks Terms from Taxonomy
- * Controls number of revisions for all post types
 
 **NOTE**: Development in progress
 
@@ -52,6 +52,11 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 
 ## Changelog ##
+
+### 0.2 ###
+* Watchman Settings introduced
+* Revision Limit by Post Type
+* Watchman Icon added
 
 ### 0.1 ###
 * Plugin Scaffolding
