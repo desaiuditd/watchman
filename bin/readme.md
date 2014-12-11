@@ -26,5 +26,5 @@ in the markdown. Screenshots and banner images for WordPress.org are also automa
 
 What is also included in this repo is an [`svn-push`](svn-push) to push commits from a GitHub repo to the WordPress.org SVN repo for the plugin.
 The `/assets/` directory in the root of the project will get automatically moved one directory above in the SVN repo (alongside
-`trunk`, `branches`, and `tags`). To use, include an `svn-url` file in the root of your repo and let this file contains he full root URL
+`trunk`, `branches`, and `tags`). To use, include an `svn-url` file in the root of your repo and let this file contains the full root URL
 to the WordPress.org repo for plugin (don't include `trunk`).
