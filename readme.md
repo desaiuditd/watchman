@@ -3,13 +3,15 @@
 
 Watchman is a WordPress plugin which keeps track of revisions for your posts, pages and custom post types as well.
 
-**Contributors:** [desaiuditd](http://profiles.wordpress.org/desaiuditd)  
-**Tags:** [revisions](http://wordpress.org/plugins/tags/revisions), [post](http://wordpress.org/plugins/tags/post), [page](http://wordpress.org/plugins/tags/page), [custom post types](http://wordpress.org/plugins/tags/custom post types), [WordPress](http://wordpress.org/plugins/tags/WordPress), [history](http://wordpress.org/plugins/tags/history)  
+**Contributors:** [desaiuditd](https://profiles.wordpress.org/desaiuditd)  
+**Tags:** [revisions](https://wordpress.org/plugins/tags/revisions), [post](https://wordpress.org/plugins/tags/post), [page](https://wordpress.org/plugins/tags/page), [custom post types](https://wordpress.org/plugins/tags/custom post types), [WordPress](https://wordpress.org/plugins/tags/WordPress), [history](https://wordpress.org/plugins/tags/history)  
 **Requires at least:** 3.6  
-**Tested up to:** 4.0  
+**Tested up to:** 4.4  
 **Stable tag:** master  
 **License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)  
 **Donate Link:** Paypal ID : desaiuditd@gmail.com  
+
+[![Build Status](https://travis-ci.org/desaiuditd/watchman.png?branch=master)](https://travis-ci.org/desaiuditd/watchman) 
 
 ## Description ##
 
@@ -34,8 +36,6 @@ Following are some of the trivial features:
 * [FAQ](http://blog.incognitech.in/watchman/faq/ "Visit Watchman's FAQ page")
 * [GitHub](http://github.com/desaiuditd/watchman/) - Please mention your wordpress.org username when sending pull requests.
 
-[![Build Status](https://travis-ci.org/desaiuditd/watchman.png?branch=master)](https://travis-ci.org/desaiuditd/watchman)
-
 ## Installation ##
 
 * Install the plugin from the 'Plugins' section in your dashboard (Go to `Plugins > Add New > Search` and search for Watchman).
@@ -54,7 +54,17 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 ![Watchman Settings Page](assets/screenshot-1.png)
 
+### Track Post Author in Revisions. User Display Name & User ID of the author is shown.
+
+![Track Post Author in Revisions. User Display Name & User ID of the author is shown.](assets/screenshot-2.png)
+
 ## Changelog ##
+
+Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
+### 0.5 December 17, 2015 ###
+* Post Author tracking added.
+* This update is coming after a long time & I've got this breakthrough to track the restricted fields as well.
+* So I hope to get more updates soon with proposed features. Kudos!
 
 ### 0.4 December 12, 2014 ###
 * Screenshot added
