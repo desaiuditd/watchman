@@ -13,8 +13,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'WM_Revision' ) ) {
 
+	/**
+	 * Class WM_Revision
+	 *
+	 * Handles all the functionality to track custom fields
+	 *
+	 * @since 0.4
+	 */
 	class WM_Revision {
 
+		/**
+		 * @since 0.4
+		 */
 		function __construct() {
 
 			/**
@@ -51,6 +61,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 
 		/**
 		 * @return array $revision_fields
+		 * @since 0.5
 		 */
 		function get_custom_revision_fields() {
 			$revision_fields = array(
@@ -68,6 +79,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 
 		/**
 		 * @param $revision_id
+		 * @since 0.4
 		 */
 		function post_revision_process( $revision_id ) {
 
@@ -86,6 +98,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		 * @param $post
 		 *
 		 * @return mixed
+		 * @since 0.4
 		 */
 		function check_for_changes( $post_has_changed, $last_revision, $post ) {
 
@@ -118,6 +131,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		 * @param string  $context  The context of whether the current revision is the old or the new one. Values are 'to' or 'from'.
 		 *
 		 * @return string $value
+		 * @since 0.4
 	     */
 		function revision_field_content( $value, $field, $post, $context ) {
 
@@ -142,6 +156,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		 * @param WP_Post $compare_to   The revision post to compare to.
 		 *
 		 * @return array $return
+		 * @since 0.5
 		 */
 		function revision_ui_diff( $return, $compare_from, $compare_to ) {
 
