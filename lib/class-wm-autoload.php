@@ -64,6 +64,5 @@ if ( ! class_exists( 'WM_Autoload' ) ) {
 		function get_class_file_name( $class_name ) {
 			return 'class-' . strtolower( str_replace( '_', '-', $class_name ) ) . '.php' ;
 		}
-
 	}
 }

@@ -104,7 +104,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 
 			foreach ( array_keys( $this->get_custom_revision_fields() ) as $field ) {
 
-				$post_value =  normalize_whitespace( $post->$field );
+				$post_value = normalize_whitespace( $post->$field );
 				$revision_value = normalize_whitespace( apply_filters( "_wp_post_revision_field_$field", $last_revision->$field, $field, $last_revision, 'from' ) );
 
 				if ( $post_value != $revision_value ) {
@@ -113,7 +113,6 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 					break;
 
 				}
-
 			}
 
 			return $post_has_changed;
@@ -181,7 +180,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 				$content_to = apply_filters( "_wp_post_revision_field_$field", $compare_to->$field, $field, $compare_to, 'to' );
 
 				$args = array(
-					'show_split_view' => true
+					'show_split_view' => true,
 				);
 
 				/**
@@ -216,7 +215,6 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 
 			return $return;
 		}
-
 	}
 
 }

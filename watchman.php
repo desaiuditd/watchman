@@ -155,7 +155,6 @@ if ( ! class_exists( 'Watchman' ) ) {
 		function hooks() {
 
 		}
-
 	}
 
 }

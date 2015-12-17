@@ -44,9 +44,11 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			return $num;
 		}
 
-		function show_message( $message, $type = 'info' ) { ?>
+		function show_message( $message, $type = 'info' ) {
+			?>
 			<div class="<?php echo $type; ?>"><?php echo $message; ?></div>
-		<?php }
+			<?php
+		}
 
 		function display_admin_notices() {
 			// check for our settings page - need this in conditional further down
@@ -147,19 +149,24 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			return $value;
 		}
 
-		function revision_limit_section_callback() { ?>
+		function revision_limit_section_callback() {
+			?>
 			<p class="description">
 				<?php _e( 'This section lets you control revision limits on your post types. Leave blank in case of unlimited revisions.', WM_TEXT_DOMAIN ); ?><br />
 				<?php _e( 'If any post type is registered but missing from the following list, then it means that it does not support revisions.', WM_TEXT_DOMAIN ); ?><br />
 				<?php _e( 'Please make sure the post type you want to monitor declares revision support in registration.', WM_TEXT_DOMAIN ); ?>
 			</p>
-		<?php }
+			<?php
+		}
 
-		function revision_limit_callback( $args ) { ?>
+		function revision_limit_callback( $args ) {
+			?>
 			<input type="text" name="<?php echo self::$revision_limit_key . $args['post_type']; ?>" id="<?php echo self::$revision_limit_key . $args['post_type']; ?>" value="<?php echo get_option( self::$revision_limit_key . $args['post_type'] ); ?>" />
-		<?php }
+			<?php
+		}
 
-		function render_settings_page() { ?>
+		function render_settings_page() {
+			?>
 			<div class="wrap">
 
 				<h2 class="wm-heading"><i class="wm-icon icon-watchman"></i><?php _e( 'Watchman' ); ?></h2>
@@ -174,7 +181,8 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 
 				</form>
 			</div>
-		<?php }
+			<?php
+		}
 
 	}
 
