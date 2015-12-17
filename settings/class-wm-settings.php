@@ -183,7 +183,6 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			</div>
 			<?php
 		}
-
 	}
 
 }
