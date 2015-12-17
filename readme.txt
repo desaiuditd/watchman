@@ -48,6 +48,7 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 == Screenshots ==
 
 1. Watchman Settings Page
+2. Track Post Author in Revisions. User Display Name & User ID of the author is shown.
 
 
 ** License **
@@ -68,6 +69,11 @@ Great! There are several ways you can get involved to help make Watman better:
 == Changelog ==
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
+
+= 0.5 December 17, 2015 =
+* Post Author tracking added.
+* This update is coming after a long time & I've got this breakthrough to track the restricted fields as well.
+* So I hope to get more updates soon with proposed features. Kudos!
 
 = 0.4 December 12, 2014 =
 * Screenshot added
