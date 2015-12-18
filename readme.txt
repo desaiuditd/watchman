@@ -74,6 +74,7 @@ Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadm
 = 0.6 =
 * Fixes #6 - Track Post Status
 * Fixes #7 - Track Post Date
+* Fixes #13 - Stops unneccessary revisions getting created
 * Adds Settings link in Plugin Row Action
 * Fixes few Translation Strings
 
