@@ -118,9 +118,9 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		 */
 		function check_for_changes( $post_has_changed, $last_revision, $post ) {
 
-			foreach ( array_keys( $this->get_custom_revision_fields() ) as $field ) {
+			foreach ( $this->get_custom_revision_fields() as $field => $fieldmeta ) {
 
-				$post_value = normalize_whitespace( $post->$field );
+				$post_value = normalize_whitespace( call_user_func( $fieldmeta['meta_value'], $post ) );
 				$revision_value = normalize_whitespace( apply_filters( "_wp_post_revision_field_$field", $last_revision->$field, $field, $last_revision, 'from' ) );
 
 				if ( $post_value != $revision_value ) {
