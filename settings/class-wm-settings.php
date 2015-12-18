@@ -178,7 +178,7 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			?>
 			<div class="wrap">
 
-				<h2 class="wm-heading"><i class="wm-icon icon-watchman"></i><?php _e( 'Watchman' ); ?></h2>
+				<h2 class="wm-heading"><i class="wm-icon icon-watchman"></i><?php _e( 'Watchman', WM_TEXT_DOMAIN ); ?></h2>
 
 				<form action='options.php' method='post'>
 

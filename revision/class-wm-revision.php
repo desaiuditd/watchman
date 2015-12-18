@@ -66,7 +66,15 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		function get_custom_revision_fields() {
 			$revision_fields = array(
 				'post_author' => array(
-					'label' => __( 'Post Author' ),
+					'label' => __( 'Post Author', WM_TEXT_DOMAIN ),
+					'meta_key' => '_wm_post_author',
+					'meta_value' => function( $post ) {
+						$author = new WP_User( $post->post_author );
+						return $author->display_name . ' (' . $post->post_author . ')';
+					},
+				),
+				'post_status' => array(
+					'label' => __( 'Post Status', WM_TEXT_DOMAIN ),
 					'meta_key' => '_wm_post_author',
 					'meta_value' => function( $post ) {
 						$author = new WP_User( $post->post_author );
