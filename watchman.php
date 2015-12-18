@@ -34,7 +34,7 @@ if ( ! class_exists( 'Watchman' ) ) {
 		 * @since 0.1
 		 * @static
 		 * @static var array $instance
-		 * @return The one true Watchman
+		 * @return Watchman The one true Watchman
 		 */
 		public static function instance() {
 			if ( ! isset( self::$instance ) && ! ( self::$instance instanceof Watchman ) ) {
@@ -101,6 +101,11 @@ if ( ! class_exists( 'Watchman' ) ) {
 			// Defines WM_URL if it does not exits.
 			if ( ! defined( 'WM_URL' ) ) {
 				define( 'WM_URL', plugin_dir_url( __FILE__ ) );
+			}
+
+			// Defines WM_BASE_PATH if it does not exits.
+			if ( ! defined( 'WM_BASE_PATH' ) ) {
+				define( 'WM_BASE_PATH', plugin_basename( __FILE__ ) );
 			}
 		}
 

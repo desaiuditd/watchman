@@ -27,6 +27,15 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			add_action( 'admin_notices', array( $this, 'display_admin_notices' ) );
 
 			add_filter( 'wp_revisions_to_keep', array( $this, 'filter_revisions_to_keep' ), 999, 2 );
+
+			add_filter( 'plugin_action_links_' . WM_BASE_PATH, array( $this, 'plugin_actions' ), 10, 4 );
+		}
+
+		function plugin_actions( $actions, $plugin_file, $plugin_data, $context ) {
+
+			$actions['settings'] = '<a href="' . admin_url( 'admin.php?page=' . self::$page_slug ) . '">' . __( 'Settings', WM_TEXT_DOMAIN ) . '</a>';
+
+			return $actions;
 		}
 
 		function filter_revisions_to_keep( $num, $post ) {
