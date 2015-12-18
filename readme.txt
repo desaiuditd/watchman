@@ -70,6 +70,11 @@ Great! There are several ways you can get involved to help make Watman better:
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
 
+= 0.6 =
+* Fixes #6 - Track Post Status
+* Adds Settings link in Plugin Row Action
+* Fixes few Translation Strings
+
 = 0.5 December 17, 2015 =
 * Post Author tracking added.
 * This update is coming after a long time & I've got this breakthrough to track the restricted fields as well.
