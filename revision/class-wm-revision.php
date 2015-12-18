@@ -81,6 +81,14 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 						return $post_status->label;
 					},
 				),
+				'post_date' => array(
+					'label' => __( 'Post Date', WM_TEXT_DOMAIN ),
+					'meta_key' => '_wm_post_date',
+					'meta_value' => function( $post ) {
+						$datef = 'M j, Y @ H:i';
+						return date_i18n( $datef, strtotime( $post->post_date ) );
+					},
+				),
 			);
 			return $revision_fields;
 		}
