@@ -71,7 +71,7 @@ Great! There are several ways you can get involved to help make Watman better:
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
 
-= 0.6 =
+= 0.6 December 18, 2015 =
 * Fixes #6 - Track Post Status
 * Fixes #7 - Track Post Date
 * Fixes #13 - Stops unneccessary revisions getting created
