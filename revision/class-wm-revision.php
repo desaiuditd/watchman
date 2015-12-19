@@ -76,14 +76,13 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 			// Check individual Post Limit
 			$revision_limit = get_post_meta( $post->ID, WM_Admin::$wm_revision_limit_meta_key, true );
 
-			if ( $revision_limit !== '' ) {
+			if ( '' !== $revision_limit ) {
 
 				if ( ! is_numeric( $revision_limit ) ) {
 					$num = - 1;
 				} else {
 					$num = intval( $revision_limit );
 				}
-
 			} else {
 
 				$post_type = get_post_type( $post );

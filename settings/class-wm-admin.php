@@ -37,7 +37,7 @@ if ( ! class_exists( 'WM_Admin' ) ) {
 
 			add_action( 'add_meta_boxes', array( $this, 'add_revision_meta_box' ), 10, 2 );
 			add_action( 'save_post', array( $this, 'save_revision_meta_box' ), 10, 3 );
-			add_action( 'admin_notices', array( $this, 'show_admin_notices' ), 10  );
+			add_action( 'admin_notices', array( $this, 'show_admin_notices' ), 10 );
 			add_filter( 'removable_query_args', array( $this, 'remove_error_query_arg' ), 10, 1 );
 
 		}
@@ -82,14 +82,17 @@ if ( ! class_exists( 'WM_Admin' ) ) {
 
 		function save_revision_meta_box( $post_id, $post, $update ) {
 
-			if ( ! isset( $_POST['revision-meta-box-nonce'] ) || ! wp_verify_nonce( $_POST['revision-meta-box-nonce'], basename( __FILE__ ) ) )
+			if ( ! isset( $_POST['revision-meta-box-nonce'] ) || ! wp_verify_nonce( $_POST['revision-meta-box-nonce'], basename( __FILE__ ) ) ) {
 				return $post_id;
+			}
 
-			if ( ! current_user_can( 'edit_post', $post_id ) )
+			if ( ! current_user_can( 'edit_post', $post_id ) ) {
 				return $post_id;
+			}
 
-			if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+			if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 				return $post_id;
+			}
 
 			$revision_limit = '';
 			if ( isset( $_POST['revision-limit'] ) ) {
@@ -106,7 +109,6 @@ if ( ! class_exists( 'WM_Admin' ) ) {
 			update_post_meta( $post_id, self::$wm_revision_limit_meta_key, $revision_limit );
 
 		}
-
 	}
 
 }
