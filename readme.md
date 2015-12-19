@@ -62,6 +62,10 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 
 ![Track Post Status in Revisions. Label of Post Status is shown.](assets/screenshot-3.png)
 
+### Set Revision Limit for individual posts.
+
+![Set Revision Limit for individual posts.](assets/screenshot-4.png)
+
 ## Changelog ##
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.

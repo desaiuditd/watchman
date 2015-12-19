@@ -50,7 +50,7 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 1. Watchman Settings Page
 2. Track Post Author in Revisions. User Display Name & User ID of the author is shown.
 3. Track Post Status in Revisions. Label of Post Status is shown.
-
+4. Set Revision Limit for individual posts.
 
 ** License **
 
