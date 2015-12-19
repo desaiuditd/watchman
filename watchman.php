@@ -3,7 +3,7 @@
  * Plugin Name: Watchman
  * Plugin URI: http://blog.incognitech.in/watchman
  * Description: A WordPress plugin to track revisions of your posts, pages and custom posts
- * Version: 0.6
+ * Version: 0.7
  * Author: desaiuditd
  * Author URI: http://blog.incognitech.in
  */
@@ -85,7 +85,7 @@ if ( ! class_exists( 'Watchman' ) ) {
 
 			// Defines WM_VERSION if it does not exits.
 			if ( ! defined( 'WM_VERSION' ) ) {
-				define( 'WM_VERSION', '0.6' );
+				define( 'WM_VERSION', '0.7' );
 			}
 
 			// Defines WM_TEXT_DOMAIN if it does not exits.
