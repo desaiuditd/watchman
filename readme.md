@@ -4,7 +4,7 @@
 Watchman is a WordPress plugin which keeps track of revisions for your posts, pages and custom post types as well.
 
 **Contributors:** [desaiuditd](https://profiles.wordpress.org/desaiuditd)  
-**Tags:** [revisions](https://wordpress.org/plugins/tags/revisions), [post](https://wordpress.org/plugins/tags/post), [page](https://wordpress.org/plugins/tags/page), [custom post types](https://wordpress.org/plugins/tags/custom post types), [WordPress](https://wordpress.org/plugins/tags/WordPress), [history](https://wordpress.org/plugins/tags/history)  
+**Tags:** [revision](https://wordpress.org/plugins/tags/revision), [revisions](https://wordpress.org/plugins/tags/revisions), [post](https://wordpress.org/plugins/tags/post), [posts](https://wordpress.org/plugins/tags/posts), [page](https://wordpress.org/plugins/tags/page), [pages](https://wordpress.org/plugins/tags/pages), [custom post types](https://wordpress.org/plugins/tags/custom post types), [custom post type](https://wordpress.org/plugins/tags/custom post type), [WordPress](https://wordpress.org/plugins/tags/WordPress), [history](https://wordpress.org/plugins/tags/history), [track](https://wordpress.org/plugins/tags/track), [track post](https://wordpress.org/plugins/tags/track post), [track posts](https://wordpress.org/plugins/tags/track posts), [edit flow](https://wordpress.org/plugins/tags/edit flow)  
 **Requires at least:** 3.6  
 **Tested up to:** 4.4  
 **Stable tag:** master  

@@ -1,7 +1,7 @@
 === Watchman ===
 Contributors:      desaiuditd
 Donate Link:       Paypal ID : desaiuditd@gmail.com
-Tags:              revisions, post, page, custom post types, WordPress, history
+Tags:              revision, revisions, post, posts, page, pages, custom post types, custom post type, WordPress, history, track, track post, track posts, edit flow
 Requires at least: 3.6
 Tested up to:      4.4
 Stable tag:        master
