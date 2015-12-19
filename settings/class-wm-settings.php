@@ -26,8 +26,6 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_menu_css' ) );
 			add_action( 'admin_notices', array( $this, 'display_admin_notices' ) );
 
-			add_filter( 'wp_revisions_to_keep', array( $this, 'filter_revisions_to_keep' ), 999, 2 );
-
 			add_filter( 'plugin_action_links_' . WM_BASE_PATH, array( $this, 'plugin_actions' ), 10, 4 );
 		}
 
@@ -36,21 +34,6 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 			$actions['settings'] = '<a href="' . admin_url( 'admin.php?page=' . self::$page_slug ) . '">' . __( 'Settings', WM_TEXT_DOMAIN ) . '</a>';
 
 			return $actions;
-		}
-
-		function filter_revisions_to_keep( $num, $post ) {
-
-			$post_type = get_post_type( $post );
-
-			$revision = get_option( self::$revision_limit_key . $post_type, false );
-
-			if ( empty( $revision ) || ! is_numeric( $revision ) ) {
-				$num = -1;
-			} else {
-				$num = intval( $revision );
-			}
-
-			return $num;
 		}
 
 		function show_message( $message, $type = 'info' ) {

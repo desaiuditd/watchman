@@ -28,6 +28,11 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 		function __construct() {
 
 			/**
+			 * This hook filters the number of revisions to keep for a specific post.
+			 */
+			add_filter( 'wp_revisions_to_keep', array( $this, 'filter_revisions_to_keep' ), 999, 2 );
+
+			/**
 			 * This hooks gets fired once a revision is stored in WP_Post table in DB.
 			 *
 			 * This gives us $revision_id. So we can make use of that and store our stuff into post meta for that particular revision.
@@ -57,6 +62,42 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 			 * This adds custom diff ui for custom revision fields
 			 */
 			add_filter( 'wp_get_revision_ui_diff', array( $this, 'revision_ui_diff' ), 10, 3 );
+		}
+
+		/**
+		 * @param $num
+		 * @param $post
+		 *
+		 * @return int
+		 * @since 0.1
+		 */
+		function filter_revisions_to_keep( $num, $post ) {
+
+			// Check individual Post Limit
+			$revision_limit = get_post_meta( $post->ID, WM_Admin::$wm_revision_limit_meta_key, true );
+
+			if ( $revision_limit !== '' ) {
+
+				if ( ! is_numeric( $revision_limit ) ) {
+					$num = - 1;
+				} else {
+					$num = intval( $revision_limit );
+				}
+
+			} else {
+
+				$post_type = get_post_type( $post );
+
+				$revision_limit = get_option( WM_Settings::$revision_limit_key . $post_type, false );
+
+				if ( empty( $revision_limit ) || ! is_numeric( $revision_limit ) ) {
+					$num = - 1;
+				} else {
+					$num = intval( $revision_limit );
+				}
+			}
+
+			return $num;
 		}
 
 		/**

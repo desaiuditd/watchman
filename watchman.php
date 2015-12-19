@@ -122,6 +122,7 @@ if ( ! class_exists( 'Watchman' ) ) {
 			new WM_Autoload( trailingslashit( WM_PATH ) . 'settings/' );
 
 			new WM_Settings();
+			new WM_Admin();
 			new WM_Revision();
 		}
 
