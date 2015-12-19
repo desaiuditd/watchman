@@ -71,6 +71,9 @@ Great! There are several ways you can get involved to help make Watman better:
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
 
+= 0.7.1 =
+* Adds Screenshot for #12
+
 = 0.7 =
 * Fixes #12 - Revision Limit for Individual Posts
 * Fixes #14 - User can stop saving revisions for post type with number 0
