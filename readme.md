@@ -65,10 +65,14 @@ Read Watchman [Documentation](http://blog.incognitech.in/watchman/docs/)
 ## Changelog ##
 
 Please visit [Watchman's Roadmap page](http://blog.incognitech.in/watchman/roadmap/ "Visit Watchman's Features page") to get some details about future releases.
+### 0.7 ###
+* Fixes #12 - Revision Limit for Individual Posts
+* Fixes #14 - User can stop saving revisions for post type with number 0
+
 ### 0.6 December 18, 2015 ###
 * Fixes #6 - Track Post Status
 * Fixes #7 - Track Post Date
-* Fixes #13 - Stops unneccessary revisions getting created
+* Fixes #13 - Stops unnecessary revisions getting created
 * Adds Settings link in Plugin Row Action
 * Fixes few Translation Strings
 
