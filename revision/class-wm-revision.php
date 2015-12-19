@@ -89,7 +89,7 @@ if ( ! class_exists( 'WM_Revision' ) ) {
 
 				$revision_limit = get_option( WM_Settings::$revision_limit_key . $post_type, false );
 
-				if ( empty( $revision_limit ) || ! is_numeric( $revision_limit ) ) {
+				if ( '' === $revision_limit || ! is_numeric( $revision_limit ) ) {
 					$num = - 1;
 				} else {
 					$num = intval( $revision_limit );

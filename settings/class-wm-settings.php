@@ -134,7 +134,7 @@ if ( ! class_exists( 'WM_Settings' ) ) {
 
 			if ( ! empty( $value ) && ! is_numeric( $value ) ) {
 				add_settings_error( $option, 'watchman_errors', sprintf( __( 'You need to fill numeric value for %s revision limit.', WM_TEXT_DOMAIN ), '<strong>' . $labels->name . '</strong>' ) );
-			} else {
+			} else if ( '' !== $value ) {
 				$value = absint( $value );
 			}
 
